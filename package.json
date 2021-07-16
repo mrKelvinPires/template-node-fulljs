@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "npm install sass -save-dev && sass --watch src/assets/sass/style.scss:src/css/style.css",
+        "sass": "npm install sass -save--dev && sass --watch src/assets/sass/style.scss:src/css/style.css",
         "webpack": "webpack serve --open --config webpack.dev.js",
         "start": "npm-run-all -p -r sass webpack",
         "build": "node-sass src/assets/sass/style.scss > src/css/style.css && webpack --config webpack.prod.js"
